@@ -1,0 +1,9 @@
+{
+	"name": "adf-udacitydip1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "769454c8-8244-4c98-9cb8-0b09e0574cf5",
+		"tenantId": "4c3925af-8c68-4cd9-8e6a-3d13cc82f675"
+	}
+}
