@@ -99,7 +99,7 @@
 				"datalakePayrollHistory, SQLPayrollCurrent union(byName: true)~> unionCurrentAndHistoryData",
 				"unionCurrentAndHistoryData filter(FiscalYear>=$Param_FiscalYear) ~> filterOnFiscalYear",
 				"filterOnFiscalYear derive(TotalPaid = RegularGrossPaid+TotalOTPaid+TotalOtherPay) ~> TotalPaid",
-				"TotalPaid aggregate(groupBy(AgencyID,",
+				"TotalPaid aggregate(groupBy(AgencyName,",
 				"          FiscalYear),",
 				"     TotalPaid = sum(TotalPaid)) ~> aggregateAgencyNFiscalYear",
 				"aggregateAgencyNFiscalYear sink(allowSchemaDrift: true,",
